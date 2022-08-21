@@ -41,16 +41,22 @@
             background-color: gray;
             color: white;
         }
+
+        caption{
+            font-size: 1em;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
+    
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead> <!--Cabeça-->
             <tr> <!--linha-->
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 20px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody> <!--Corpo-->
@@ -103,10 +109,12 @@
         <tfoot> <!--Pé-->
             <tr>
                 <th id="vazio"></th>
-                <th class="cor-foot">Total de habitantes</td>
+                <th scope="row" class="cor-foot">Total de habitantes</td>
                 <th class="cor-foot num">000000</td>
             </tr>
         </tfoot>
+        
     </table>
+
 </body>
 </html>
